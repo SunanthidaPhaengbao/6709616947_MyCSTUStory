@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+body {
+    background-image:url('resources/ca_lQB.gif');
+    position: static;
+    width: auto;
+    height: auto;
+}
+
+.head {
+    margin: 27px;
+    font-family: "Sora", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color:#ffffff;
+}
+
+.imgI {
+    #profile {
+        display: block;
+        width: 302.4px;
+        height: 402.4px;
+    }
+}
+
+.p {
+    position: absolute;
+    font-family: "Sora", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color: #ffffff;
+    border: 2px solid rgb(255, 252, 252);
+    border-radius: 70px;
+    width: 18%;
+    margin-left: 27%;
+    top: 44%;
+
+}
+
+.tu {
+    position: relative;
+    color: #f4b5b5;  
+    font-family: "Sora", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 0;
+    margin-left: 80px;
+}
+
+.q {
+    margin-bottom: 5px;
+    background: rgba(255, 255, 255, 0.31);
+    position: relative;
+    color: #ffffff;
+    line-height: 1.5;
+    font-size: 20px;
+    font-family: "Sora", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.vdo {
+    max-width: 100%;
+    font-family: "Sora", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 15px;
+    line-height:10 ;
+}
+
+video {
+    width: 50%;
+    height: auto;
+    border: 1px solid #ddd;
+}
