@@ -1,53 +1,41 @@
 
-  
-
-
-body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    min-height: 100vh;
-    background: #0a0a0a;
-    width: auto;
 }
 
-.container {
-    position: relative;
-    width: auto;
-    height: 100%;
-    overflow: hidden;
-}
-.bubbles {
-    position: relative;
+body {
     display: flex;
-}
-.bubbles span {
-    
-    width: 300px;
-    height: 60px;
-    background: #fff;
-    margin: 0 4px;
-    border-radius: 50%;
-    box-shadow: 0 0 0 10px #ffffff, 0 0 50px #fff, 0 0 100px #fff;
-    animation: animate 15s linear infinite;
-    animation-duration: calc(100s / var(--i));
-  
-}
-.bubbles span:nyh-child(even) {
-    background: #fff;
-    box-shadow: 0 0 0 10px #f4d1b5, 0 0 50px #fff, 0 0 100px #fff;
+    justify-content: center;
+    align-items: center;
+    background-color: #080808;
 }
 
-@keyframes animate {
+.image-container {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    animation: diagonalMove 5s linear infinite;
+}
+
+@keyframes diagonalMove {
     0% {
-        transform: translateY(100vh) scale(0);
+        transform: translate(0, 0);
     }
     100% {
-        transform: translateY(-10vh) scale(1);
+        transform: translate(100px, 100px);
     }
-
-
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
 
