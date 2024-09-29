@@ -192,46 +192,59 @@ nav a:hover {
 }
 
 
-.hp {
-    position: absolute;
-    background: #ffffff;
+summary {
+    position: relative;
+    background: rgb(212, 187, 1);
     width: 80px;
     height: 30px;
-    top: 150px;
+    top: 200px;
     left: 150px;
     z-index: 999;
     border-radius: 50px;
     text-align: center;
 }
 
-.hp p:link, p:visited {
+h3 {
+    color: #ffffff;
+    top: 6px;
     position: relative;
-    top: 100px;
-    color: #ad2727;
 }
 
-details {
+.textprofile {
+    position: absolute;
     background: #ffffff;
+    border-radius: 25px;
+    width: 300px;
+    height: 140px;
+    top: 220px;
+    left: 130px;
+    padding-left: 25px;
+    padding-right: 25px;
+    z-index: 998;
+    text-align: left;
+    box-shadow: 5px 5px  rgba(190, 168, 0, 0.493);
 }
 
+.textprofile p  {
+    position: relative;
+    top: 7px;
+    color: rgb(96, 84, 0);
+    font-size: 16px;
+    letter-spacing: -0.8px;
+}
 
-.container2 {
-    width: 100px;
-    height: 100px;
+.cards {
+    background: rgb(96, 84, 0);
+    width: 75px;
+    height: 75px;
+    border-radius: 12px;
     position: absolute;
 }
 
-.container2 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    animation: moveUpDown 3s ease-in-out infinite;
+.heart {
+    position: relative;
+    width: 75px;
+    top: 2px;
 }
 
-.image-5 {
-    width: 100px;
-    height: 30px;
-    top: 350px;
-    left: 50px;
-}
+
