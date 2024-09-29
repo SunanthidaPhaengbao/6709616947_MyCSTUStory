@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@400;500;600;700&display=swap');
 
 body {
     justify-content: center;
@@ -7,6 +8,35 @@ body {
     font-family: monospace;
 }
 
+header {
+    position: absolute;
+    right: 25px;
+    color: #ffffff;
+    font-family: "Palanquin Dark", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    z-index: 1000;
+    text-shadow: 2px 5px rgb(212, 187, 1);
+}
+header h1 {
+    margin: 0;
+}
+
+.name {
+    position: absolute;
+    font-size: 17px;
+    color: #ffffff;
+    border: 2.5px solid rgb(255, 252, 252);
+    font-weight: 600;
+    border-radius: 50px;
+    width: 250px;
+    left: 900px;
+    top: 600px;
+    z-index: 1000;
+    text-align: center;
+    
+}
 .container1 {
     position: absolute;
 }
@@ -28,17 +58,17 @@ body {
 }
 
 .image-2 {
-    width: 300px;
-    height: 300px;
-    top: 10px;
-    left: 600px;
+    width: 400px;
+    height: 400px;
+    top: -200px;
+    left: 700px;
 }
 
 .image-3 {
-    width: 300px;
-    height: 300px;
-    top: 300px;
-    left: 700px;
+    width: 600px;
+    height: 600px;
+    top: 200px;
+    left: 400px;
 }
 
 .image-4 {
@@ -72,8 +102,8 @@ body {
 .image-6 {
     width: 100px;
     height: 30px;
-    top: 100px;
-    left: 1100px;
+    top: 150px;
+    left: 1050px;
 }
 
 .image-7 {
@@ -164,7 +194,7 @@ nav .index , .myfuture , .myjourney {
 
 .index:hover ,.myfuture:hover ,.myjourney:hover {
     transform:translateY(-4px);
-    background-color: rgba(236, 184, 30, 0.925);
+    background-color: rgba(220, 213, 160, 0.738);
 }
 
 nav a:hover {
@@ -222,7 +252,15 @@ h3 {
     padding-right: 25px;
     z-index: 998;
     text-align: left;
-    box-shadow: 5px 5px  rgba(190, 168, 0, 0.493);
+    box-shadow: 5px 5px  rgba(190, 168, 0, 0.5);
+}
+
+.textprofile:hover {
+    z-index: 1000;
+    width: 305px;
+    height: 145px;
+    top: 217.5px;
+    left: 127.5px;
 }
 
 .textprofile p  {
@@ -233,18 +271,50 @@ h3 {
     letter-spacing: -0.8px;
 }
 
-.cards {
-    background: rgb(96, 84, 0);
+.cards .ins, .beta, .heart {
+    box-shadow: 5px 5px  rgba(190, 168, 0, 0.5);
     width: 75px;
     height: 75px;
-    border-radius: 12px;
+    top: 390px;
+    left: 161.25px;
+    border-radius: 17px;
     position: absolute;
+    z-index: 998;
+}
+.cards .icon .heart,.beta {
+    background: linear-gradient( 135deg, rgba(250, 242, 196, 1), rgb(212, 187, 1) );
+
 }
 
-.heart {
-    position: relative;
-    width: 75px;
-    top: 2px;
+
+.icon .beta {
+    left: 267.5px;
+
+}
+
+.cards .ins {
+    left: 373.75px;
+}
+
+.heart:hover {
+    width: 77px;
+    height: auto;
+    top: 389px;
+    left: 160.25px;
+}
+
+.beta:hover {
+    width: 77px;
+    height: auto;
+    top: 389px;
+    left: 266.5px;
+}
+
+.ins:hover {
+    width: 77px;
+    height: auto;
+    top: 389px;
+    left: 372.75px;
 }
 
 
