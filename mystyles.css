@@ -15,10 +15,11 @@ header {
     font-family: "Palanquin Dark", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 30px;
+    font-size: 40px;
     z-index: 1000;
     text-shadow: 2px 5px rgb(212, 187, 1);
 }
+
 header h1 {
     margin: 0;
 }
@@ -39,6 +40,7 @@ header h1 {
 }
 .container1 {
     position: absolute;
+    
 }
 
 .container1 img {
@@ -47,6 +49,7 @@ header h1 {
     object-fit: cover;
     position: absolute;
     animation: moveUpDown2 7s ease-in-out infinite;
+    
 }
 
 /* Image 1 */
@@ -55,6 +58,7 @@ header h1 {
     height: 300px;
     top: 100px;
     left: 150px;
+    z-index: 1;
 }
 
 .image-2 {
@@ -69,6 +73,7 @@ header h1 {
     height: 600px;
     top: 200px;
     left: 400px;
+    z-index: 0;
 }
 
 .image-4 {
@@ -173,9 +178,7 @@ nav .index , .myfuture , .myjourney {
     height: 30px;
     z-index: 1000;
     box-shadow: 3.5px 3.5px 0 0 rgb(96, 84, 0);
-    text-align: center;
-
-    
+    text-align: center; 
 }
 
 .index {
@@ -192,7 +195,7 @@ nav .index , .myfuture , .myjourney {
 }
 
 
-.index:hover ,.myfuture:hover ,.myjourney:hover {
+nav .index:hover ,.myfuture:hover ,.myjourney:hover {
     transform:translateY(-4px);
     background-color: rgba(220, 213, 160, 0.738);
 }
@@ -222,16 +225,22 @@ nav a:hover {
 }
 
 
-summary {
+figure {
     position: relative;
     background: rgb(212, 187, 1);
     width: 80px;
     height: 30px;
-    top: 200px;
-    left: 150px;
+    top: 185px;
+    left: 100px;
     z-index: 999;
     border-radius: 50px;
     text-align: center;
+}
+
+
+
+article:hover figure{
+    transform: translateY(-20px);
 }
 
 h3 {
@@ -255,7 +264,7 @@ h3 {
     box-shadow: 5px 5px  rgba(190, 168, 0, 0.5);
 }
 
-.textprofile:hover {
+article:hover .textprofile {
     z-index: 1000;
     width: 305px;
     height: 145px;
@@ -271,7 +280,7 @@ h3 {
     letter-spacing: -0.8px;
 }
 
-.cards .ins, .beta, .heart {
+.cards .ins, .beta {
     box-shadow: 5px 5px  rgba(190, 168, 0, 0.5);
     width: 75px;
     height: 75px;
@@ -281,7 +290,7 @@ h3 {
     position: absolute;
     z-index: 998;
 }
-.cards .icon .heart,.beta {
+.cards .icon .beta {
     background: linear-gradient( 135deg, rgba(250, 242, 196, 1), rgb(212, 187, 1) );
 
 }
@@ -296,11 +305,33 @@ h3 {
     left: 373.75px;
 }
 
-.heart:hover {
+.open-video-btn {
+    box-shadow: 5px 5px  rgba(190, 168, 0, 0.5);
+    width: 75px;
+    height: 75px;
+    top: 390px;
+    left: 161.25px;
+    border-radius: 17px;
+    position: absolute;
+    z-index: 998;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient( 135deg, rgba(250, 242, 196, 1), rgb(212, 187, 1) );
+}
+
+.open-video-btn img {
+    position: relative;
+    width: 75px;
+    top: -1.5;
+    left: -6.5px;
+}
+
+.open-video-btn:hover {
     width: 77px;
-    height: auto;
+    height: 77px;
     top: 389px;
     left: 160.25px;
+    background: rgba(220, 213, 160, 0.738);
 }
 
 .beta:hover {
@@ -317,4 +348,117 @@ h3 {
     left: 372.75px;
 }
 
+button .video-popup {
+    position: absolute;
+    top: 93.75px;
+    left: 38.4px;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
 
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #000;
+}
+
+/*myjourney*/
+
+main a {
+    position: relative;   
+    font-size: 15px;
+    display: inline-block;
+    top: 6px;
+    color: #ddd;
+}
+
+main .st, .nd,.rd,.th {
+    background: rgb(212, 187, 1);
+    position: absolute;
+    top: 200px;
+    width: 80px;
+    height: 30px;
+    border-radius: 50px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.st {  
+    left: 200px;
+    
+}
+
+.nd {  
+    left: 500px;
+}
+
+.rd {  
+    left: 800px;
+}
+
+.th {  
+    left: 1100px;
+}
+
+article a:link, a:visited {
+    color: rgb(96, 84, 0);
+    text-decoration: none;
+    position: relative;
+    top: 6px;
+    font-size: 15px;
+    padding: 2px;
+}
+
+article .tfirst, .tsecond, .tthird, .tfourth {
+    position: absolute;
+    background: #ffffff;
+    border-radius: 25px;
+    width: 200px;
+    height: 300px;
+    top: 220px;
+    padding-left: 25px;
+    padding-right: 25px;
+    z-index: 998;
+    text-align: left;
+    box-shadow: 5px 5px  rgba(190, 168, 0, 0.5);
+
+}
+
+article {
+    position: absolute;
+    padding-left: 25px;
+    padding-right: 25px;padding-left: 25px;
+    padding-right: 25px;
+}
+
+article p {
+    position: relative;
+    top: 30px;
+    color: rgb(96, 84, 0);
+    font-size: 16px;
+    letter-spacing: -0.8px;
+}
+
+.tfirst {
+    left: 200px;
+
+} 
+
+.tsecond {
+    left: 500px;
+
+} 
+
+.tthird {
+    left: 800px;
+
+} 
+
+.tfourth {
+    left: 1100px;
+
+}
