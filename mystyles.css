@@ -513,15 +513,36 @@ article p {
 /*my future*/
 
 article .myft {
-    position: absolute;
+    position: relative;
     background: rgba(255, 255, 255, 1);
     border-radius: 25px;
     width: 1420px;
-    height: 400px;
+    height: 380px;
     top: 220px;
     padding-left: 25px;
     padding-right: 25px;
     z-index: 998;
     text-align: left;
     box-shadow: 5px 5px  rgba(190, 168, 0, 0.5);
+}
+
+.pic {
+    position: absolute;
+    top: 80px;
+    left: 30px;
+    width: 100px;
+    height: auto;
+    z-index: 1001;
+    
+    
+}
+
+.me .pic:hover g{
+    width: 200px;
+    height: auto;
+    z-index: 1001;
+    top: 10px;
+    left: 450px;
+    content: url(resources/dcm.gif);
+    border-radius: 25px;
 }
