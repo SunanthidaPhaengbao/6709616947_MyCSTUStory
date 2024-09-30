@@ -15,9 +15,13 @@ header {
     font-family: "Palanquin Dark", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 40px;
+    font-size: 35px;
     z-index: 1000;
     text-shadow: 2px 5px rgb(212, 187, 1);
+    border: 4px solid rgb(96, 84, 0);
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 100px;
 }
 
 header h1 {
@@ -230,9 +234,9 @@ figure {
     background: rgb(212, 187, 1);
     width: 80px;
     height: 30px;
-    top: 185px;
-    left: 100px;
-    z-index: 999;
+    top: 165px;
+    left: 90px;
+    z-index: 998;
     border-radius: 50px;
     text-align: center;
 }
@@ -241,6 +245,7 @@ figure {
 
 article:hover figure{
     transform: translateY(-20px);
+    z-index: 990;
 }
 
 h3 {
@@ -255,11 +260,11 @@ h3 {
     border-radius: 25px;
     width: 300px;
     height: 140px;
-    top: 220px;
-    left: 130px;
+    top: 200px;
+    left: 100px;
     padding-left: 25px;
     padding-right: 25px;
-    z-index: 998;
+    z-index: 997;
     text-align: left;
     box-shadow: 5px 5px  rgba(190, 168, 0, 0.5);
 }
@@ -284,7 +289,7 @@ article:hover .textprofile {
     box-shadow: 5px 5px  rgba(190, 168, 0, 0.5);
     width: 75px;
     height: 75px;
-    top: 390px;
+    top: 370px;
     left: 161.25px;
     border-radius: 17px;
     position: absolute;
@@ -305,11 +310,11 @@ article:hover .textprofile {
     left: 373.75px;
 }
 
-.open-video-btn {
+.heart {
     box-shadow: 5px 5px  rgba(190, 168, 0, 0.5);
     width: 75px;
     height: 75px;
-    top: 390px;
+    top: 370px;
     left: 161.25px;
     border-radius: 17px;
     position: absolute;
@@ -319,19 +324,18 @@ article:hover .textprofile {
     background: linear-gradient( 135deg, rgba(250, 242, 196, 1), rgb(212, 187, 1) );
 }
 
-.open-video-btn img {
+.heart img {
     position: relative;
     width: 75px;
     top: -1.5;
     left: -6.5px;
 }
 
-.open-video-btn:hover {
+.heart:hover {
     width: 77px;
     height: 77px;
     top: 389px;
     left: 160.25px;
-    background: rgba(220, 213, 160, 0.738);
 }
 
 .beta:hover {
@@ -348,23 +352,16 @@ article:hover .textprofile {
     left: 372.75px;
 }
 
-button .video-popup {
+video {
     position: absolute;
-    top: 93.75px;
-    left: 38.4px;
-    width: 100%;
-    height: 100%;
-    z-index: 1000;
+    top: 480px;
+    left: 130px;
+    z-index: 999;
+    border-radius: 25px;
 }
 
-.close-btn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 20px;
-    cursor: pointer;
-    color: #000;
-}
+
+
 
 /*myjourney*/
 
@@ -373,51 +370,52 @@ main a {
     font-size: 15px;
     display: inline-block;
     top: 6px;
-    color: #ddd;
+    color: rgb(96, 84, 0);
+    
 }
 
 main .st, .nd,.rd,.th {
     background: rgb(212, 187, 1);
     position: absolute;
-    top: 200px;
+    top: 175px;
     width: 80px;
     height: 30px;
     border-radius: 50px;
     text-align: center;
     z-index: 1000;
+    border: 4px solid rgb(96, 84, 0);
 }
 
 .st {  
-    left: 200px;
+    left: 104px;
     
 }
 
 .nd {  
-    left: 500px;
+    left: 468px;
 }
 
 .rd {  
-    left: 800px;
+    left: 832px;
 }
 
 .th {  
-    left: 1100px;
+    left: 1196px;
 }
 
-article a:link, a:visited {
+article a {
     color: rgb(96, 84, 0);
     text-decoration: none;
     position: relative;
     top: 6px;
-    font-size: 15px;
-    padding: 2px;
+    font-size: 15px;text-align: center;
 }
 
 article .tfirst, .tsecond, .tthird, .tfourth {
     position: absolute;
     background: #ffffff;
     border-radius: 25px;
-    width: 200px;
+    width: 250px;
     height: 300px;
     top: 220px;
     padding-left: 25px;
@@ -425,40 +423,82 @@ article .tfirst, .tsecond, .tthird, .tfourth {
     z-index: 998;
     text-align: left;
     box-shadow: 5px 5px  rgba(190, 168, 0, 0.5);
+    
 
 }
 
 article {
     position: absolute;
-    padding-left: 25px;
-    padding-right: 25px;padding-left: 25px;
+    margin-left: 25px;
     padding-right: 25px;
 }
 
 article p {
     position: relative;
-    top: 30px;
-    color: rgb(96, 84, 0);
-    font-size: 16px;
     letter-spacing: -0.8px;
+    font-size: 15px;
 }
 
+
+
 .tfirst {
-    left: 200px;
+    left: 64px;
+    right: 1156px;
 
 } 
 
 .tsecond {
-    left: 500px;
+    left: 428px;
+    right: 792px;
 
 } 
 
 .tthird {
-    left: 800px;
+    left: 792px;
+    right: 428px;
 
 } 
 
 .tfourth {
-    left: 1100px;
+    left: 1156px;
+    right: 64px;
+
+}
+
+.topY {
+    font-size: 17px;
+    color: rgb(96, 84, 0);
+    position: relative;
+    font-weight: bold;
+    border: 4px outset rgb(96, 84, 0);
+    border-radius: 25px;
+    padding: 4px;
+    text-align: center;
+    background: rgba(109, 97, 2, 0.259);
+    
+    
+}
+.tfirst,.tsecond,.tthird,.tfourth {
+    #line-1 {
+        top: 50px;
+    }
+    #line-2 {
+        top: 90px;
+    }
+    #line-3 {
+        top: 130px;
+    }
+    
+}   
+
+.topY p {
+    display: none;
+    margin-top: 10px;
+    
+    
+}
+.topY:hover p {
+        color: #000000;
+        display: block;
 
 }
