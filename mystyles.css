@@ -271,10 +271,10 @@ h3 {
 
 article:hover .textprofile {
     z-index: 1000;
-    width: 305px;
-    height: 145px;
-    top: 217.5px;
-    left: 127.5px;
+    width: 320px;
+    height: 150px;
+    top: 195px;
+    left: 95px;
 }
 
 .textprofile p  {
@@ -334,21 +334,21 @@ article:hover .textprofile {
 .heart:hover {
     width: 77px;
     height: 77px;
-    top: 389px;
+    top: 370px;
     left: 160.25px;
 }
 
 .beta:hover {
     width: 77px;
     height: auto;
-    top: 389px;
+    top: 370px;
     left: 266.5px;
 }
 
 .ins:hover {
     width: 77px;
     height: auto;
-    top: 389px;
+    top: 370px;
     left: 372.75px;
 }
 
@@ -537,7 +537,7 @@ article .myft {
     
 }
 
-.me .pic:hover g{
+.me .pic:hover {
     width: 200px;
     height: auto;
     z-index: 1001;
