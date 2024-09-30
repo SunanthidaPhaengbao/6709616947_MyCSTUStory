@@ -423,9 +423,9 @@ article .tfirst, .tsecond, .tthird, .tfourth {
     z-index: 998;
     text-align: left;
     box-shadow: 5px 5px  rgba(190, 168, 0, 0.5);
-    
-
 }
+
+
 
 article {
     position: absolute;
@@ -478,15 +478,22 @@ article p {
     
     
 }
-.tfirst,.tsecond,.tthird,.tfourth {
+.tfirst,.tsecond,.tthird,.tfourth,.myft {
     #line-1 {
         top: 50px;
     }
     #line-2 {
-        top: 90px;
+        top: 65px;
     }
     #line-3 {
-        top: 130px;
+        top: 80px;
+    }
+
+    #line-4 {
+        top: 95px;
+    }
+    #line-5 {
+        top: 110px;
     }
     
 }   
@@ -501,4 +508,20 @@ article p {
         color: #000000;
         display: block;
 
+}
+
+/*my future*/
+
+article .myft {
+    position: absolute;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 25px;
+    width: 1420px;
+    height: 400px;
+    top: 220px;
+    padding-left: 25px;
+    padding-right: 25px;
+    z-index: 998;
+    text-align: left;
+    box-shadow: 5px 5px  rgba(190, 168, 0, 0.5);
 }
